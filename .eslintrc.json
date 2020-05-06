@@ -16,7 +16,7 @@
         "sourceType": "module"
     },
     "rules": {
-                "import/extensions": [
+            "import/extensions": [
             "error",
             "ignorePackages"
             ],
@@ -24,6 +24,7 @@
                 "error",
                 "LabeledStatement",
                 "WithStatement"
-            ]
+            ],
+            "no-console": "off"
     }
 }

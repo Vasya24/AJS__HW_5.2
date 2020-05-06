@@ -16,9 +16,21 @@ const obj = {
       id: 9,
       name: 'Нокаутирующий удар',
       icon: 'http://...'
-      // <- обратите внимание, описание "засекречено"
+    },
+    {
+      id: 10,
+      name: 'Фаербол',
+      icon: 'http://...'
     }
   ]	
 }
 
-const { id, name, icon } = other
+
+let { special } = obj;
+
+for (let { id, name, icon, description = 'Не определено' } of special) {
+  console.log([{id, name, icon, description}])
+}
+
+
+export { obj, special }
