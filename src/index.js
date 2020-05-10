@@ -25,12 +25,4 @@ const obj = {
   ]	
 }
 
-
-let { special } = obj;
-
-for (let { id, name, icon, description = 'Не определено' } of special) {
-  console.log([{id, name, icon, description}])
-}
-
-
-export { obj, special }
+export { obj }
