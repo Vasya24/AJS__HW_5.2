@@ -1,8 +1,9 @@
-import { obj } from '../index';
-import { main } from '../script'
+// import { obj } from '../index';
+import { main, obj } from '../script'
 
 
 test('Does it works?', () => {
+    main()
     expect(Object.entries(obj).length).toBeGreaterThan(2)
 })
 
